@@ -1,0 +1,11 @@
+<!-- accounts/templates/dashboard.html -->
+
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Dashboard!</h1>
+    <p>You are logged in as {{ user.username }}.</p>
+    <a href="{% url 'logout' %}">Logout</a>
+{% endblock %}
+
